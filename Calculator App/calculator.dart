@@ -6,7 +6,7 @@ void main() {
   printSuccess(
       "\n************************************************\n* Hello to the Ahmed LAMLIH's calculator app ! *\n************************************************\n");
   print(
-      " -> 1. Addition\n -> 2. Substraction\n -> 3. Multiplication\n -> 4. Division");
+      " -> 1. Addition\n -> 2. Subtraction\n -> 3. Multiplication\n -> 4. Division");
   do {
     printWarning(
         "Please choose the equivalent number of your operation (type 'exit' to quite the app): ");
@@ -25,7 +25,7 @@ void main() {
         try {
           List numbers = getNumbers();
           outputResult = numbers[0] - numbers[1];
-          printSuccess("Substraction result is : $outputResult");
+          printSuccess("Subtraction result is : $outputResult");
         } catch (e) {
           printError("Invalid input ! Please try again with a number.");
         }
