@@ -10,7 +10,7 @@ And here are some screenshots of the app that I created:
 ## Operations
 
 ### Addition Operation
-<img src="https://github.com/Lamlih-Dev/Flutter101_Bootcamp/blob/main/Calculator%20App/images/dashboard.PNG?raw=true">
+<img src="https://github.com/Lamlih-Dev/Flutter101_Bootcamp/blob/main/Calculator%20App/images/add.PNG?raw=true">
 
 ### Subtraction Operation
 <img src="https://github.com/Lamlih-Dev/Flutter101_Bootcamp/blob/main/Calculator%20App/images/sub.PNG?raw=true">
