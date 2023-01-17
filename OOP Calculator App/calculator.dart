@@ -11,15 +11,15 @@ class Operation {
     this.number2 = number2;
   }
 
-  //Calcule Methode
-  calcule() {}
+  //Calcul Method
+  calcul() {}
 }
 
 class Addition extends Operation {
   Addition(double number1, double number2) : super(number1, number2) {}
 
   @override
-  calcule() {
+  calcul() {
     return (super.number1! + super.number2!);
   }
 }
@@ -28,7 +28,7 @@ class Subtraction extends Operation {
   Subtraction(double number1, double number2) : super(number1, number2) {}
 
   @override
-  calcule() {
+  calcul() {
     return (super.number1! - super.number2!);
   }
 }
@@ -37,7 +37,7 @@ class Multiplication extends Operation {
   Multiplication(double number1, double number2) : super(number1, number2) {}
 
   @override
-  calcule() {
+  calcul() {
     return (super.number1! * super.number2!);
   }
 }
@@ -46,7 +46,7 @@ class Division extends Operation {
   Division(double number1, double number2) : super(number1, number2) {}
 
   @override
-  calcule() {
+  calcul() {
     return (super.number1! / super.number2!);
   }
 }
@@ -90,7 +90,7 @@ void main() {
         try {
           List numbers = getNumbers();
           Addition addition = Addition(numbers[0], numbers[1]);
-          printSuccess("Addition result is : ${addition.calcule()}");
+          printSuccess("Addition result is : ${addition.calcul()}");
         } catch (e) {
           printError("Invalid input ! Please try again with a number.");
         }
@@ -99,7 +99,7 @@ void main() {
         try {
           List numbers = getNumbers();
           Subtraction subtraction = Subtraction(numbers[0], numbers[1]);
-          printSuccess("Subtraction result is : ${subtraction.calcule()}");
+          printSuccess("Subtraction result is : ${subtraction.calcul()}");
         } catch (e) {
           printError("Invalid input ! Please try again with a number.");
         }
@@ -110,7 +110,7 @@ void main() {
           Multiplication multiplication =
               Multiplication(numbers[0], numbers[1]);
           printSuccess(
-              "Multiplication result is : ${multiplication.calcule()}");
+              "Multiplication result is : ${multiplication.calcul()}");
         } catch (e) {
           printError("Invalid input ! Please try again with a number.");
         }
@@ -122,7 +122,7 @@ void main() {
             printError("The second number should be > than 0");
           } else {
             Division division = Division(numbers[0], numbers[1]);
-            printSuccess("Division result is : ${division.calcule()}");
+            printSuccess("Division result is : ${division.calcul()}");
           }
         } catch (e) {
           printError("Invalid input ! Please try again with a number.");
