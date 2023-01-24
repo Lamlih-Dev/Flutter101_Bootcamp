@@ -1,12 +1,15 @@
-# E-COMMERCE App Using Dart & Flutter
-Yesterday we attended our fourth session in Flutter 101 Bootcamp organized by GDG Guelmim, in this session we learned about widgets and widgets tree, we learned about Statefull and Stateless widgets and the difference between them and when to use each one! we took a look on some famous widgets such us Text, Column, Row, Stack, Container, and more. At the end of this session we had a task to do which is creating a sign in, sign up, and on boarding screens using flutter and dart of course !<br>
-I know they look super ugly 🤣 but here are some screenshots of the app that I created (All those screens will improve while we progress on the bootcamp):
+# E-COMMERCE App Using Dart & Flutter [SESSION DATE : 23/01/2023]
+Yesterday we attended our fifth session in Flutter 101 Bootcamp organized by GDG Guelmim, in this session we learned about styles and how to style our widgets, especially how to style texts, buttons, containers and more, we learned the difference between margin and padding and how to use them and how they affect our design! The instructor used a really good approach to teach us how to find and use the adequate styling param for each widget we want to style. At the end of this session we had a task to do which is re-make the sign in, sign up, and on boarding screens that we created the last session using a little bit of styling and bring life to them!<br>
+Finally our screens looks much better:
+## On Boarding Screen
+
+<img src="https://user-images.githubusercontent.com/87146845/214205607-8dffd71b-9cc4-4342-97cf-daac92d0ddba.png">
+
 ## Sign In Screen
-<img src="https://user-images.githubusercontent.com/87146845/213899311-4ce6ca27-1a87-4986-8928-cb7e128e0f40.png">
+
+<img src="https://user-images.githubusercontent.com/87146845/214205652-4ed0cc84-80c8-4555-985b-2dbf30a2d1a2.png">
 
 ## Sign Up Screen
-<img src="https://user-images.githubusercontent.com/87146845/213899319-e1540bdd-7774-4638-bfcd-a43c42e6f751.png">
 
-## On Boarding Screen
-<img src="https://user-images.githubusercontent.com/87146845/213899332-1c591e5d-4283-41bc-84a0-3d4c510b6f90.png">
+<img src="https://user-images.githubusercontent.com/87146845/214205760-2f58fa7a-3e35-46ab-977e-a4ad9250fedd.png">
 
