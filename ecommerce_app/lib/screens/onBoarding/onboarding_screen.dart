@@ -14,12 +14,12 @@ class OnboardingScreen extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
                 Text(
                   "TOKOTO",
                   style: TextStyle(
-                    color: Colors.orange[900],
+                    color: Color(0xFFF77547),
                     fontWeight: FontWeight.bold,
                     fontSize: 35,
                   ),
@@ -55,40 +55,26 @@ class OnboardingScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 60,
                 ),
                 /* REPRESENT THE ILLUSTRATION ON THE DESIGN */
-                Container(
-                  width: 300,
-                  height: 300,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.orange,
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.shopping_cart_outlined,
-                        size: 90,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
+                Image.asset(
+                  width: 320,
+                  height: 320,
+                  "assets/images/splash_1.png",
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 50,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      width: 30,
+                      width: 22,
                       height: 8,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.orange[900],
+                        color: Color(0xFFF77547),
                       ),
                     ),
                     Container(
@@ -97,7 +83,7 @@ class OnboardingScreen extends StatelessWidget {
                       margin: EdgeInsets.all(7),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey,
+                        color: Color(0xFFD3D3D3),
                       ),
                     ),
                     Container(
@@ -105,7 +91,7 @@ class OnboardingScreen extends StatelessWidget {
                       height: 8,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey,
+                        color: Color(0xFFD3D3D3),
                       ),
                     ),
                   ],
@@ -117,7 +103,7 @@ class OnboardingScreen extends StatelessWidget {
                   onPressed: () => {print("Button Clicked !")},
                   child: Text("Continue"),
                   style: TextButton.styleFrom(
-                    backgroundColor: Colors.orange[900],
+                    backgroundColor: Color(0xFFF77547),
                     foregroundColor: Colors.white,
                     textStyle: TextStyle(
                       fontSize: 15,

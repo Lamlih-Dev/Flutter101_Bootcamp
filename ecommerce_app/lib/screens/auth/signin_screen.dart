@@ -117,14 +117,14 @@ class SigninScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 25,
                 ),
                 TextButton(
                   onPressed: () => {print("hello")},
                   child: Text("Continue"),
                   style: TextButton.styleFrom(
                     minimumSize: Size(double.infinity, 50),
-                    backgroundColor: Colors.orange[900],
+                    backgroundColor: Color(0xFFF77547),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
@@ -140,10 +140,12 @@ class SigninScreen extends StatelessWidget {
                     Container(
                       width: 35,
                       height: 35,
+                      padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.grey,
+                        color: Colors.grey[200],
                       ),
+                      child: Image.asset("assets/icons/google.png"),
                     ),
                     SizedBox(
                       width: 10,
@@ -151,10 +153,12 @@ class SigninScreen extends StatelessWidget {
                     Container(
                       width: 35,
                       height: 35,
+                      padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.grey,
+                        color: Colors.grey[200],
                       ),
+                      child: Image.asset("assets/icons/facebook.png"),
                     ),
                     SizedBox(
                       width: 10,
@@ -162,10 +166,12 @@ class SigninScreen extends StatelessWidget {
                     Container(
                       width: 35,
                       height: 35,
+                      padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.grey,
+                        color: Colors.grey[200],
                       ),
+                      child: Image.asset("assets/icons/twitter.png"),
                     ),
                   ],
                 ),
@@ -186,7 +192,7 @@ class SigninScreen extends StatelessWidget {
                       "Sign Up",
                       style: TextStyle(
                         fontSize: 15,
-                        color: Colors.orange[900],
+                        color: Color(0xFFF77547),
                       ),
                       textAlign: TextAlign.center,
                     ),

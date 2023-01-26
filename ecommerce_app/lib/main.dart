@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'E-COMMERCE APP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: "Muli",
         primarySwatch: Colors.blue,
       ),
       home: const SignupScreen(),
