@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -134,7 +135,7 @@ class SignupScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Colors.grey[200],
                       ),
-                      child: Image.asset("assets/icons/google.png"),
+                      child: SvgPicture.asset("assets/icons/google.svg"),
                     ),
                     SizedBox(
                       width: 10,
@@ -147,7 +148,7 @@ class SignupScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Colors.grey[200],
                       ),
-                      child: Image.asset("assets/icons/facebook.png"),
+                      child: SvgPicture.asset("assets/icons/facebook.svg"),
                     ),
                     SizedBox(
                       width: 10,
@@ -160,7 +161,7 @@ class SignupScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Colors.grey[200],
                       ),
-                      child: Image.asset("assets/icons/twitter.png"),
+                      child: SvgPicture.asset("assets/icons/twitter.svg"),
                     ),
                   ],
                 ),
