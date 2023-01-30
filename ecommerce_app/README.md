@@ -1,6 +1,6 @@
-# E-COMMERCE App Using Dart & Flutter [SESSION DATE : 25/01/2023]
-Yesterday we attended our sixth session in Flutter 101 Bootcamp organized by GDG Guelmim, in this session we continued our journey with the styles and how to style our widgets, todays was about how to add fonts, icons, and images(local and online hosted images), we learned how to use hexadecimal colors too. At the end of this session we had a task to do which is adding the icons, illustrations, and fonts to improve the sign in, sign up, and on boarding screens that we created the last session !<br>
-Finally our screens looks much better:
+# E-COMMERCE App Using Dart & Flutter [SESSION DATE : 28/01/2023]
+We attended our seventh session in Flutter 101 Bootcamp organized by GDG Guelmim, in this session we continued our journey with the mobile dev, todays was about how to add dependencies, and what is a dependency, what is used for, what is the difference between it and a dev dependency, we discovered some cool dependencies too such us get, image_cropper, and flutter_svg. At the end of this session we had a task to do which is changing the icons from png to svg using flutter_svg dependency. <br>
+Those are our project screens:
 ## On Boarding Screen
 
 <img src="https://user-images.githubusercontent.com/87146845/214731229-f38b6c53-e5bf-4b1e-beb2-12dd764040b2.png">
