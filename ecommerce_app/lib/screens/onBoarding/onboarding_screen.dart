@@ -1,7 +1,28 @@
+import 'package:ecommerce_app/screens/onBoarding/onboarding_content.dart';
 import 'package:flutter/material.dart';
 
-class OnboardingScreen extends StatelessWidget {
+class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
+
+  @override
+  State<OnboardingScreen> createState() => _OnboardingScreenState();
+}
+
+class _OnboardingScreenState extends State<OnboardingScreen> {
+  int currentIndex = 0;
+  PageController? _controller;
+
+  @override
+  void initState() {
+    _controller = PageController(initialPage: 0);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _controller!.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,80 +48,58 @@ class OnboardingScreen extends StatelessWidget {
                 SizedBox(
                   height: 12,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Welcome to ",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                      ),
-                    ),
-                    Text(
-                      "Tokoto, ",
-                      style: TextStyle(
-                        color: Colors.grey[800],
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
-                    ),
-                    Text(
-                      "Let's shop!",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                      ),
-                    ),
-                  ],
+                SizedBox(
+                  height: 470,
+                  child: PageView.builder(
+                    controller: _controller,
+                    onPageChanged: (int index) {
+                      setState(() {
+                        currentIndex = index;
+                      });
+                    },
+                    itemCount: contents.length,
+                    itemBuilder: (_, i) {
+                      return Column(
+                        children: [
+                          contents[i].title!,
+                          SizedBox(
+                            height: 60,
+                          ),
+                          Image.asset(
+                            width: 320,
+                            height: 320,
+                            contents[i].image!,
+                          ),
+                        ],
+                      );
+                    },
+                  ),
                 ),
                 SizedBox(
-                  height: 60,
+                  height: 20,
                 ),
-                /* REPRESENT THE ILLUSTRATION ON THE DESIGN */
-                Image.asset(
-                  width: 320,
-                  height: 320,
-                  "assets/images/splash_1.png",
-                ),
-                SizedBox(
-                  height: 50,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 22,
-                      height: 8,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color(0xFFF77547),
-                      ),
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(
+                      contents.length,
+                      (index) => buildDots(index),
                     ),
-                    Container(
-                      width: 8,
-                      height: 8,
-                      margin: EdgeInsets.all(7),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color(0xFFD3D3D3),
-                      ),
-                    ),
-                    Container(
-                      width: 8,
-                      height: 8,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color(0xFFD3D3D3),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
                 SizedBox(
                   height: 50,
                 ),
                 TextButton(
-                  onPressed: () => {print("Button Clicked !")},
+                  onPressed: () => {
+                    if (currentIndex == contents.length - 1)
+                      {
+                        Navigator.pushNamed(context, "/signin"),
+                      },
+                    _controller!.nextPage(
+                        duration: Duration(milliseconds: 100),
+                        curve: Curves.bounceIn)
+                  },
                   child: Text("Continue"),
                   style: TextButton.styleFrom(
                     backgroundColor: Color(0xFFF77547),
@@ -118,6 +117,18 @@ class OnboardingScreen extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Container buildDots(int index) {
+    return Container(
+      height: 6,
+      width: currentIndex == index ? 22 : 6,
+      margin: EdgeInsets.only(right: 5),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: currentIndex == index ? Color(0xFFF77547) : Color(0xFFD3D3D3),
       ),
     );
   }
