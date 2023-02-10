@@ -1,5 +1,5 @@
-# E-COMMERCE App Using Dart & Flutter [SESSION DATE : 28/01/2023]
-We attended our seventh session in Flutter 101 Bootcamp organized by GDG Guelmim, in this session we continued our journey with the mobile dev, todays was about how to add dependencies, and what is a dependency, what is used for, what is the difference between it and a dev dependency, we discovered some cool dependencies too such us get, image_cropper, and flutter_svg. At the end of this session we had a task to do which is changing the icons from png to svg using flutter_svg dependency. <br>
+# E-COMMERCE App Using Dart & Flutter [SESSION DATE : 04/02/2023]
+We attended our eighth session in Flutter 101 Bootcamp organized by GDG Guelmim, in this session we continued our journey with the mobile dev, todays was about how to add logic to the login and register screens, Flutter Navigations, and Extensions. At the end of this session we had a task to do: Add slider to the onboarding screen, to show the 3 pages / Add validation to compare password and password confirmation / Connect the onboarding screen with sign in screen. <br>
 Those are our project screens:
 ## On Boarding Screen
 
